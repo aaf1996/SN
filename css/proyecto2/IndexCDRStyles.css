@@ -1,0 +1,22 @@
+﻿.fondoYacha {
+    /*background-image: url('../../img/fondoPagPrincipal1920x1378.png');*/
+    background-image: url(https://tienda.mundosantanatura.com/img/fondoSumaqWasi.jpg);
+    position: relative;
+    background-size: cover;
+    /*background-size: 100% 100%;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.imgLogoYachaPagPrin {
+    object-fit: scale-down;
+    width: 50%;
+}
+
+.imgPagPrin {
+    height: 50vw;
+    transform: scale(0.9);
+}

@@ -1,0 +1,95 @@
+﻿/*.containerComiGestionadas {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin-top: 107px;
+    margin-bottom: 50px;
+    grid-column-gap: 20px;
+}*/
+
+.title__containerComiGestionadas {
+    grid-column: 2 / -2;
+    grid-row: 1 / 1;
+}
+
+    .title__containerComiGestionadas > h1 {
+        text-align: start;
+        margin-bottom: 40px;
+        color: var(--Dark-grises);
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+.table__containerComiGestionadas {
+    grid-column: 2 / -2;
+    grid-row: 2 / 2;
+}
+
+    .table__containerComiGestionadas > .dataTables_wrapper {
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 29px;
+    }
+
+.dataTables_wrapper {
+    position: relative;
+    clear: both;
+    zoom: 1;
+}
+
+/* --------------------- TABLA ------------------------------------- */
+#table_idComiGestionadas > thead > tr > .sorting_asc:not(th:nth-last-child(1)), #table_id > thead > tr > .sorting_desc:not(th:nth-last-child(1)) {
+    background-color: var(--Intense-orange);
+    transition: background .3s;
+}
+
+#table_idComiGestionadas.dataTable.nowrap th {
+    background-color: var(--Primary-orange);
+    color: white;
+    font-size: 14px;
+}
+
+#table_idComiGestionadas > thead > tr > th:nth-child(1) {
+    border-radius: 7px 0px 0px 0px;
+}
+
+#table_idComiGestionadas > thead > tr > th:nth-last-child(1) {
+    border-radius: 0px 7px 0px 0px;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    float: right;
+    text-align: right;
+}
+
+#table_idComiGestionadas_filter > label, #table_idComiGestionadas_length > label {
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+    #table_idComiGestionadas_filter > label > input {
+        border: 1px solid var(--Medium-primary);
+        border-radius: 8px;
+        padding: 0 13px;
+        width: 189px;
+        height: 36px;
+    }
+
+.form-control-filter::placeholder {
+    /*font-family: "Font Awesome 5 Free";*/
+    /*font-weight: 900;*/
+    background-image: url('../../img/Buscar.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 17px;
+    color: #C4C4C4;
+    font-size: 12px;
+    word-spacing: 17px;
+}
+
+#table_idComiGestionadas_filter > label > input:focus {
+    outline: none;
+}
+
+#table_idComiGestionadas_filter > label > input:active {
+    outline: none;
+}
